@@ -1,0 +1,23 @@
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+  </head>
+  <body>
+    <div ng-controller="ctrl" >
+      <form novalidate
+            name="modelForm"
+            model-validation="model"
+            ng-submit="submit()"
+            >
+
+        <input type="text" name="name" ng-model="model.name">
+        <input type="text" name="age" ng-model="model.age">
+        <input type="text" name="email" ng-model="model.email">
+        <input type="submit">
+      </form>
+    </div>
+    <script src="js/model-structure-min.js"></script>
+    <script src="js/angular-model-structure-validation.js"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
